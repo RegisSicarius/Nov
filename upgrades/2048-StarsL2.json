@@ -1,0 +1,10 @@
+{
+	"editable": false,
+	"id": 2048,
+	"pid": 8,
+	"cost": 20000,
+	"name": "Safe Generator Field +",
+	"annexed": 2,
+	"description": "It takes time, but galaxies sometimes pattern specialized areas said \"safe\" for optimal star generation.\nEffects on galaxy activity: min range of star amount increases by 15%",
+	"type": "StarsL"
+}

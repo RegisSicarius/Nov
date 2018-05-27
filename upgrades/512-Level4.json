@@ -1,0 +1,10 @@
+{
+	"editable": false,
+	"id": 512,
+	"pid": 256,
+	"cost": 1000000,
+	"name": "Galaxy's Centered Black Hole +++",
+	"annexed": 100,
+	"description": "Black Holes are known for their presence in the middle of every widening Galaxies\nEffets on Galaxy Radius: increases by 10% the worth of sacrificed stars",
+	"type": "Level"
+}

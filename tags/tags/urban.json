@@ -1,0 +1,1 @@
+{"uses":10,"tagName":"urban","author":"299959543822024704","created":1526902438.133,"edited":1526924415.682,"code":"{set;word;{regexreplace;{args};/\\s/g;+}}https://www.urbandictionary.com/define.php?term={get;word}"}

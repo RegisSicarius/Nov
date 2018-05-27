@@ -1,0 +1,10 @@
+{
+	"editable": false,
+	"id": 128,
+	"pid": 1,
+	"cost": 30000,
+	"name": "Active Dark Matter",
+	"annexed": 3,
+	"description": "Do you know dark matter? It borders galaxy, and sustains stars into its shape, that also affects attractive energy through a galaxy\nEffets on cohesion: decreases by 10% the impact of the number of galaxies you've already absorbed",
+	"type": "Annexed"
+}

@@ -1,0 +1,1 @@
+{"uses":38,"tagName":"help","author":"219250439483424768","created":1527143131.373,"edited":1527149373.53,"code":"**`path:`help{if;!=;{args};;>{regexreplace;{args};/\\s+/g;>}}**{regexreplace;{aget;help::{args;0};{aget;help:err}}{aget;help:options};/`{lb}6{rb}asciidoc/gm;{nl}}"}

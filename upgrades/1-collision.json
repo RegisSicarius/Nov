@@ -1,0 +1,10 @@
+{
+	"editable": false,
+	"id": 1,
+	"pid": 0,
+	"cost": 2000,
+	"name": "New Growth",
+	"annexed": 0,
+	"description": "Here starts your adventure, this upgrade turns on collisions with other galaxies and also activates upgrade purchasing",
+	"type": "Step"
+}

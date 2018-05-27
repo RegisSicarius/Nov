@@ -1,0 +1,10 @@
+{
+	"editable": false,
+	"id": 64,
+	"pid": 1,
+	"cost": 15000,
+	"name": "Attractive Space Structure",
+	"annexed": 2,
+	"description": "Some space structures are strong enough to wrench mass from other structures\nEffets on collisions: Activity creates more stars for a while after collision, depending on the upgrade stage and the radius of the galaxy you collided with",
+	"type": "Collide"
+}

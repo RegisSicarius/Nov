@@ -1,0 +1,386 @@
+{aset;help::aget;```asciidoc
+Tag:: aget
+Type:: Variable
+Description:: gets the content of an author variable, or gets the provided default value
+Structure:: &lbaget&se<varName>&se<?default>&rb
+Input:: &lbaget&sepi&se3&rb
+Ouput:: 3.14```}
+{aset;help::aset;```asciidoc
+Tag:: aset
+Type:: Variable
+Description:: sets the content of an author variable, deletes the variable if value is empty
+Structure:: &lbaset&se<varName>&se<?value>&rb
+Input:: &lbaset&sename&seKio&rb
+Ouput:: ```}
+{aset;help::avars;```asciidoc
+Tag:: avars
+Type:: Variable
+Description:: gets how many variables the author has, or returns the variable name at specified index
+Structure:: &lbavars&se<?index>&rb
+Input:: &lbavars&se0&rb
+Ouput:: pi```}
+{aset;help::vars;```asciidoc
+Tag:: vars
+Type:: Variable
+Description:: gets how many variables the tag has, or returns this variable name at specified index
+Structure:: &lbvars&se<?index>&rb
+Input:: &lbvars&rb
+Ouput:: 0```}
+{aset;help::get;```asciidoc
+Tag:: get
+Type:: Variable
+Description:: gets the content of a tag variable, or gets the provided default value
+Structure:: &lbget&se<varName>&se<?default>&rb
+Input:: &lbget&secashprize&rb
+Ouput:: 500```}
+{aset;help::set;```asciidoc
+Tag:: set
+Type:: Variable
+Description:: sets the content of a tag variable, deletes the variable if value is empty
+Structure:: &lbset&se<varName>&se<?value>&rb
+Input:: &lbset&secashprize&se3000&rb
+Ouput:: ```}
+{aset;help::lb;```asciidoc
+Tag:: lb
+Type:: Escape
+Description:: returns a &lb
+Structure:: &lblb&rb
+Input:: &lblb&rb
+Ouput:: &lb```}
+{aset;help::rb;```asciidoc
+Tag:: rb
+Type:: Escape
+Description:: returns a &rb
+Structure:: &lbrb&rb
+Input:: &lbrb&rb
+Ouput:: &rb```}
+{aset;help::nl;```asciidoc
+Tag:: nl
+Type:: Escape
+Description:: returns a carriage return
+Structure:: &lbnl&rb
+Input:: &lbnl&rb
+Ouput:: (how am I supposed to print a carriage return here? lol)```}
+{aset;help::semi;```asciidoc
+Tag:: semi
+Type:: Escape
+Description:: returns a semicolon
+Structure:: &lbsemi&rb
+Input:: &lbsemi&rb
+Ouput:: &se```}
+{aset;help::space;```asciidoc
+Tag:: space
+Type:: Escape
+Description:: returns one or many spaces
+Structure:: &lbspace&rb
+Input:: &lbspace&se3&rb
+Ouput:: (how am I supposed to print a space here? lol)```}
+{aset;help::argslen;```asciidoc
+Tag:: argslen
+Type:: Input
+Description:: returns how many arguments the tag got before executing
+Structure:: &lbargslen&rb
+Input:: &lbargslen&rb
+Ouput:: 3```}
+{aset;help::args;```asciidoc
+Tag:: args
+Type:: Input
+Description:: returns a part of the args depending on the indexes, not providing them means getting all of them, not providingthe second index means only got the argument at the first index
+Structure:: &lbargs&se<?firstIndex>&se<?lastIndex>&rb
+Input:: &lbargs&se1&rb
+Ouput:: World```}
+{aset;help::length;```asciidoc
+Tag:: length
+Type:: String
+Description:: gets the length of a string
+Structure:: &lblength&se<string>&rb
+Input:: &lblength&sethis is a string&rb
+Ouput:: 16```}
+{aset;help::lower;```asciidoc
+Tag:: lower
+Type:: String
+Description:: returns a lowercase string based on the provided one
+Structure:: &lblower&se<string>&rb
+Input:: &lblower&seThIs A StrinG&rb
+Ouput:: this is a string```}
+{aset;help::upper;```asciidoc
+Tag:: upper
+Type:: String
+Description:: returns a uppercase string based on the provided one
+Structure:: &lbupper&se<string>&rb
+Input:: &lbupper&seThIs A StrinG&rb
+Ouput:: THIS IS A STRING```}
+{aset;help::substr;```asciidoc
+Tag:: substr
+Type:: String
+Description:: returns a substring of the provided string, default value of length is the string length
+Structure:: &lbsubstr&se<string>&se<index>&se<?length>&rb
+Input:: &lbsubstr&seHello World&se2&se2&rb
+Ouput:: lo```}
+{aset;help::if;```asciidoc
+Tag:: if
+Type:: Conditional
+Description:: performs a comparison in order to execute either true statement either false statement, valid operators are: <= >= == === || && !=
+Structure:: &lbif&se<operator>&se<leftSideComparison>&se<rightSideComparison>&se<whenTrue>&se<whenFalse>&rb
+Input:: &lbif&se==&se1&se01&seyes&seno&rb
+Ouput:: yes```}
+{aset;help::inject;```asciidoc
+Tag:: inject
+Type:: Process
+Description:: runs a code after being run, inject cant be nested in another inject
+Structure:: &lbinject&se<code>&rb
+Input:: &lbinject&se&lblb&rb&rb
+Ouput:: &lb```}
+{aset;help::userid;```asciidoc
+Tag:: userid
+Type:: User
+Description:: gets the userid from a provided string (eg: a mention) or the user userid when arguments are empty
+Structure:: &lbuserid&se<?query>&rb
+Input:: &lbuserid&rb
+Ouput:: 321337187109175306```}
+{aset;help::username;```asciidoc
+Tag:: username
+Type:: User
+Description:: returns the username of an user in the provided string (eg: a mention) or the user username when arguments are empty
+Structure:: &lbusername&se<?query>&rb
+Input:: &lbusername&rb
+Ouput:: Novæ```}
+{aset;help::usernick;```asciidoc
+Tag:: usernick
+Type:: User
+Description:: returns the nickname of an user in the provided string (eg: a mention) or the user nickname when arguments are empty, when the user doesnt use a nickname, it returns the username
+Structure:: &lbusernick&se<?query>&rb
+Input:: &lbusernick&rb
+Ouput:: Novæ```}
+{aset;help::switch;```asciidoc
+Tag:: switch
+Type:: Conditional
+Description:: Performs a switch on a provided string, there is no limit on case amount
+Structure:: &lbswitch&se<string>&se<case1>&se<action1>&se<case2>&se<action2>&se<?default>&rb
+Input:: &lbswitch&se3&se1&seone&se2&setwo&se3&sethree&senot listed&rb
+Ouput:: three```}
+{aset;help::base;```asciidoc
+Tag:: base
+Type:: Number
+Description:: converts a number from a base to another
+Structure:: &lbbase&se<number>&se<baseFrom>&se<?baseTo>&rb
+Input:: &lbbasef&se36&se10&rb
+Ouput:: 15```}
+{aset;help::randint;```asciidoc
+Tag:: randint
+Type:: Randomizer
+Description:: returns a random integer between minimal bound (included) and maximal bound (excluded), default bounds are 0 and 10
+Structure:: &lbrandint&se<?minimalBound>&se<?maximalBound>&rb
+Input:: &lbrandint&rb
+Ouput:: 5```}
+{aset;help::randchoice;```asciidoc
+Tag:: randchoice
+Type:: Randomizer
+Description:: randomly returns one of the arguments
+Structure:: &lbrandchoice&se<?choice1>&se<?choice2>&se...&rb
+Input:: &lbrandchoice&seapple&sepear&sepeach&sebanana&rb
+Ouput:: peach```}
+{aset;help::randstr;```asciidoc
+Tag:: randstr
+Type:: Randomizer
+Description:: generates a string by randomly picking letters from the string
+Structure:: &lbrandstr&se<string>&se<?times>&rb
+Input:: &lbrandstr&seabcde&se7&rb
+Ouput:: eacdbec```}
+{aset;help::randarg;```asciidoc
+Tag:: randarg
+Type:: Randomizer
+Description:: randomly returns on of the arguments
+Structure:: &lbrandarg&rb
+Input:: &lbrandarg&rb
+Ouput:: ```}
+{aset;help::channelid;```asciidoc
+Tag:: channelid
+Type:: Channel
+Description:: gets the channel id
+Structure:: &lbchannelid&rb
+Input:: &lbchannelid&rb
+Ouput:: 448097754942799873```}
+{aset;help::channelname;```asciidoc
+Tag:: channelname
+Type:: Channel
+Description:: gets the channel name
+Structure:: &lbchannelname&rb
+Input:: &lbchannelname&rb
+Ouput:: tag-writing```}
+{aset;help::serverid;```asciidoc
+Tag:: serverid
+Type:: Server
+Description:: gets the server id
+Structure:: &lbserverid&rb
+Input:: &lbserverid&rb
+Ouput:: 448096613890654230```}
+{aset;help::servername;```asciidoc
+Tag:: servername
+Type:: Server
+Description:: gets the server name
+Structure:: &lbservername&rb
+Input:: &lbservername&rb
+Ouput:: Novæ Universe```}
+{aset;help::serverusers;```asciidoc
+Tag:: serverusers
+Type:: Server
+Description:: returns how many users are in the server
+Structure:: &lbserverusers&rb
+Input:: &lbserverusers&rb
+Ouput:: 16```}
+{aset;help::randuser;```asciidoc
+Tag:: randuser
+Type:: Randomizer
+Description:: randomly gets the id of one of the members
+Structure:: &lbranduser&rb
+Input:: &lbranduser&rb
+Ouput:: 264395784089239562```}
+{aset;help::sort;```asciidoc
+Tag:: sort
+Type:: Number
+Description:: sorts the numbers by spliting the string depending on the separator, default separator is a space
+Structure:: &lbsort&se<string>&se<?separator>&rb
+Input:: &lbsort&se10 16 lol -2 3&rb
+Ouput:: -2 3 10 16 lol```}
+{aset;help::randcase;```asciidoc
+Tag:: randcase
+Type:: Randomizer
+Description:: randomly decides the case of each letter and returns the changed string
+Structure:: &lbrandcase&se<string>&rb
+Input:: &lbrandcase&se&rb
+Ouput:: ThIs A StrinG```}
+{aset;help::regexreplace;```asciidoc
+Tag:: regexreplace
+Type:: String
+Description:: performs replacements on the string, using a regular expression (see javascript regexp for further information)
+Structure:: &lbregexreplace&se<StringFrom>&se<regexp>&se<?StringTo>&rb
+Input:: &lbregexreplace&seHello World!&se/[^a-z]/gi&se#&rb
+Ouput:: Hello#World#```}
+{aset;help::channeltopic;```asciidoc
+Tag:: channeltopic
+Type:: Channel
+Description:: returns the channel topic
+Structure:: &lbchanneltopic&rb
+Input:: &lbchanneltopic&rb
+Ouput:: create your tags here!```}
+{aset;help::repeat;```asciidoc
+Tag:: repeat
+Type:: String
+Description:: reproduces the same given string
+Structure:: &lbrepeat&se<string>&se<?times>&rb
+Input:: &lbrepeat&seabc&se4&rb
+Ouput:: abcabcabcabc```}
+{aset;help::reverse;```asciidoc
+Tag:: reverse
+Type:: String
+Description:: reverses the string
+Structure:: &lbreverse&se<string>&rb
+Input:: &lbreverse&seabc&rb
+Ouput:: cba```}
+{aset;help::shuffle;```asciidoc
+Tag:: shuffle
+Type:: String
+Description:: returns the string after shuffling the letters
+Structure:: &lbshuffle&se<string>&rb
+Input:: &lbshuffle&sethis is a string&rb
+Ouput:: a igt sitnssir h```}
+{aset;help::indexof;```asciidoc
+Tag:: indexof
+Type:: String
+Description:: returns the index of the first occurence of a matched string
+Structure:: &lbindexof&se<string>&se<matchString>&rb
+Input:: &lbindexof&sethis is a string&seis&rb
+Ouput:: 2```}
+{aset;help::lastindexof;```asciidoc
+Tag:: lastindexof
+Type:: String
+Description:: returns the index of the last occurence of a matched string
+Structure:: &lblastindexof&se<string>&se<matchString>&rb
+Input:: &lblastindexof&sethis is a string&seis&rb
+Ouput:: 5```}
+{aset;help::i;```asciidoc
+Tag:: i
+Type:: Process
+Description:: gets the current index in loop
+Structure:: &lbi&se<?depth>&rb
+Input:: &lbi&rb
+Ouput:: 13```}
+{aset;help::loop;```asciidoc
+Tag:: loop
+Type:: Process
+Description:: runs multiple times the same code with different index
+Structure:: &lbloop&se<firstIndex>&se<times>&se<code>&se<?separator>&rb
+Input:: &lbloop&se0&se3&se&lbi&rb&sex&rb
+Ouput:: 0x1x2x3x4x5x6x```}
+{aset;help::incr;```asciidoc
+Tag:: incr
+Type:: Number
+Description:: increases the number
+Structure:: &lbincr&se<number>&se<?step&rb
+Input:: &lbincr&se13&se3&rb
+Ouput:: 16```}
+{aset;help::decr;```asciidoc
+Tag:: decr
+Type:: Number
+Description:: decreases the number
+Structure:: &lbdecr&se<number>&se<?step&rb
+Input:: &lbdecr&se13&se3&rb
+Ouput:: 10```}
+{aset;help::count;```asciidoc
+Tag:: count
+Type:: String
+Description:: counts how many occurences of a matching string a string contains
+Structure:: &lbcount&se<string>&se<?separator>&rb
+Input:: &lbcount&sethis is a string&sei&rb
+Ouput:: 3```}
+{aset;help::time;```asciidoc
+Tag:: time
+Type:: Process
+Description:: returns the time in different timestamps format and at different dates
+Structure:: &lbtime&se<?format>&se<?timestamp>&rb
+Input:: &lbtime&rb
+Ouput:: 1527116674714```}
+{aset;help::wait;```asciidoc
+Tag:: wait
+Type:: Process
+Description:: ask the user for an answer (or cancel it in 30s)
+Structure:: &lbwait&se<codeWhenAnswering>&se<codeWhenNotAnswering>&rb
+Input:: hello&lbwait&sehow are you?&seyou didnt reply...&rb
+Ouput1:: hello
+Output2:: how are you?```}
+{aset;help::expr;```asciidoc
+Tag:: expr
+Type:: Process
+Description:: performs calculation with every javascript operator (binary, maths, unary...)
+Structure:: &lbexpr&se<expr>&rb
+Input:: &lbexpr&sepow(3,2)+4&rb
+Ouput:: 13```}
+{aset;help::answer;```asciidoc
+Tag:: answer
+Type:: Input
+Description:: works the same way args works, but with the result of a wait
+Structure:: &lbanswer&se<?firstIndex>&se<?lastIndex>&rb
+Input:: &lbanswer&rb
+Ouput:: ```}
+{aset;help::anslen;```asciidoc
+Tag:: anslen
+Type:: Input
+Description:: works the same way argslen works, but with the result of a wait
+Structure:: &lbanslen&rb
+Input:: &lbanslen&rb
+Ouput:: 3```}
+{aset;help::exec;```asciidoc
+Tag:: exec
+Type:: Process
+Description:: runs another tag
+Structure:: &lbexec&se<tagName>&se<argument1>&se...&rb
+Input:: &lbexec&semytag&rb
+Ouput:: hello Kio#9999```}
+{aset;help::comment;```asciidoc
+Tag:: comment
+Type:: Escape
+Description:: returns nothing, it just eats what you write in, it's supposed to comment your raw code
+Structure:: &lbcomment&rb
+Input:: &lbcomment&rb
+Ouput:: ```}

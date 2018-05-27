@@ -1,0 +1,33 @@
+{
+  "token": "MzIxMzM3MTg3MTA5MTc1MzA2.DTA9oA.vxJAyZ_O7TqHoPKCpL4p9-EDymM",
+  "ownerID": "321337187109175306",
+  "prefix": "nn",
+  "age": 1510837342.597,
+  "rotatePlayingGame": false,
+  "rotatePlayingGameTime" : 6000,
+  "rotatePlayingGameInStreamingStatus": false,
+  "rotateAvatarImage": false,
+  "rotateAvatarImageTime" : 600000,
+  "defaultStatus": "online",
+  "mentionNotificator": {
+    "inConsole": false,
+    "inNotificationChannel": false,
+    "logBlockedUsers": true,
+    "ignoredServers": ["256757764842455040"]
+  },
+  "keywordNotificator": {
+    "inConsole": false,
+    "inNotificationChannel": false,
+    "logBlockedUsers": false,
+    "caseInsensitive": true,
+    "ignoredServers": ["SERVER ID"]
+  },
+  "eventNotificator": {
+    "inConsole": false,
+    "inNotificationChannel": true
+  },
+  "notificationChannelID": "300043776783548416",
+  "defaultEmbedColor": "#7aaec4",
+  "deleteCommandMessages": false,
+  "deleteCommandMessagesTime": 1
+}

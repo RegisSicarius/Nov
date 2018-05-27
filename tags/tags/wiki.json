@@ -1,0 +1,1 @@
+{"uses":6,"tagName":"wiki","author":"299959543822024704","created":1526895613.821,"edited":1526924651.901,"code":"{set;msg;{regexreplace;{args};/\\s/g;_}}https://en.m.wikipedia.org/wiki/{get;msg}"}

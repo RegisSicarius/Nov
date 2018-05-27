@@ -1,0 +1,10 @@
+{
+	"editable": false,
+	"id": 4,
+	"pid": 3,
+	"cost": 12000,
+	"name": "Stable Star Dust +",
+	"annexed": 2,
+	"description": "The more stable energy sources are, the more they can create stars\nEffects on slots: losses\\*1.1, earnings\\*1.2",
+	"type": "Slots"
+}
